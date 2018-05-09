@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="bwie.com.yikezhongtwo.view.activity.GerenXinxiActivity">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y40"
+            android:background="#000">
+                <ImageView
+                    android:id="@+id/geranxinxi_fanhui"
+                    android:src="@drawable/raw_1500023215"
+                    android:layout_width="@dimen/x20"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:text="个人信息"
+                    android:gravity="center"
+                    android:textSize="@dimen/x16"
+                    android:textColor="#fff"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y20"
+            android:background="#DEDEDE"/>
+        <LinearLayout
+            android:id="@+id/geren_dianji"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y70"
+            android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:text="头像"
+                    android:textSize="@dimen/y20"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/x10"/>
+                <ImageView
+                    android:id="@+id/geren_touxiang"
+                    android:padding="@dimen/x10"
+                    android:layout_width="@dimen/x70"
+                    android:layout_height="@dimen/y70"
+                    android:src="@drawable/touxiang"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/xiugaimima"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y50"
+            android:textSize="@dimen/y20"
+            android:gravity="center"
+            android:text="修改密码"/>
+    </LinearLayout>
+
+
+

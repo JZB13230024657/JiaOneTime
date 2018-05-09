@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="bwie.com.yikezhongtwo.view.activity.SousuoHaoyouActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y45"
+        android:background="#03A9F4">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/raw_1500023215"
+            android:id="@+id/jiantou"
+            android:padding="5dp"/>
+        <TextView
+            android:id="@+id/souxuo_fanhui"
+            android:layout_toRightOf="@+id/jiantou"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="返回"
+            android:textSize="20sp"
+            android:textColor="#ffffff"/>
+        <TextView
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="搜索好友"
+            android:textSize="20sp"
+            android:textColor="#ffffff"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:background="#AAAAAA"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y45"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/suosuo_shuru"
+            android:hint="请输入ID或钟友名"
+            android:drawableLeft="@drawable/raw_1499946865"
+            android:background="#fff"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="@dimen/y32" />
+        <ImageView
+            android:id="@+id/huatong"
+            android:src="@drawable/huatong"
+            android:padding="@dimen/y3"
+            android:layout_width="@dimen/x33"
+            android:layout_height="@dimen/y45" />
+        <TextView
+            android:id="@+id/sousuo_quxiao"
+            android:text="取消"
+            android:textSize="@dimen/y16"
+            android:gravity="center"
+            android:background="#AAAAAA"
+            android:layout_width="@dimen/x33"
+            android:layout_height="@dimen/y45" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="bwie.com.yikezhongtwo.view.activity.FaDuanziActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#03A9F4">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:text="发表文章"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="取消"
+            android:id="@+id/quxiao"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textColor="#ffffff"/>
+        <TextView
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="发表"
+            android:id="@+id/fabiao_duanzi"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textColor="#ffffff"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:orientation="vertical">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y50"
+        android:id="@+id/show_duanzi"/>
+        <GridView
+            android:numColumns="4"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y100"
+            android:id="@+id/imggrid" />
+        <ImageView
+            android:layout_width="@dimen/x100"
+            android:layout_height="@dimen/y100"
+            android:src="@mipmap/raw_1500020546"
+            android:id="@+id/jiatupian"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="bwie.com.yikezhongtwo.view.activity.ShipinXiangqing">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y43">
+            <ImageView
+                android:layout_marginTop="@dimen/y14"
+                android:src="@drawable/raw_1500019926"
+                android:layout_width="@dimen/x20"
+                android:id="@+id/shipin_xiangqing_fanhui"
+                android:layout_height="@dimen/y20" />
+            <ImageView
+                android:layout_marginTop="@dimen/y13"
+                android:layout_marginLeft="@dimen/x18"
+                android:layout_toRightOf="@+id/shipin_xiangqing_fanhui"
+                android:id="@+id/shipin_xiangqing_zan"
+                android:src="@drawable/raw_1499933216"
+                android:layout_width="@dimen/x23"
+                android:layout_height="@dimen/y24" />
+            <ImageView
+                android:layout_marginTop="@dimen/y14"
+                android:layout_marginLeft="@dimen/x22"
+                android:layout_toRightOf="@+id/shipin_xiangqing_zan"
+                android:id="@+id/shipin_xiangqing_cai"
+                android:src="@drawable/raw_1499933217"
+                android:layout_width="@dimen/x21"
+                android:layout_height="@dimen/y21" />
+            <ImageView
+                android:layout_marginTop="@dimen/y11"
+                android:layout_marginLeft="@dimen/x28"
+                android:layout_toRightOf="@+id/shipin_xiangqing_cai"
+                android:id="@+id/shipin_xiangqing_fenxiang"
+                android:src="@drawable/raw_1499995160"
+                android:layout_width="@dimen/x22"
+                android:layout_height="@dimen/y32" />
+            <ImageView
+                android:layout_marginTop="@dimen/y3"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/x2"
+                android:id="@+id/shipin_xiangqing_touxiang"
+                android:src="@drawable/raw_1499995160"
+                android:layout_width="@dimen/x40"
+                android:layout_height="@dimen/y40" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y270"
+            android:background="#000">
+            <cn.jzvd.JZVideoPlayerStandard
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y270"
+                android:id="@+id/xingqingvideo"/>
+            <master.flame.danmaku.ui.widget.DanmakuView
+                android:id="@+id/danmaku_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <LinearLayout
+                android:id="@+id/operation_layout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:background="#fff"
+                android:visibility="gone">
+
+                <EditText
+                    android:id="@+id/edit_text"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    />
+
+                <Button
+                    android:id="@+id/send"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Send" />
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y40">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/xingqingshow"/>
+            <Switch
+                android:id="@+id/danmukongzhi"
+                android:padding="@dimen/x5"
+                android:layout_alignParentRight="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:switchMinWidth="20dp"
+                android:textOn="  "
+                android:textOff="  "
+                android:thumb="@drawable/thumb"
+                android:track="@drawable/track" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y228">
+            <ImageView
+                android:id="@+id/tu"
+                android:layout_marginTop="@dimen/y20"
+                android:layout_marginLeft="@dimen/x117"
+                android:layout_width="@dimen/x143"
+                android:layout_height="@dimen/y130"
+                android:src="@drawable/raw_1500033586"/>
+
+            <TextView
+                android:layout_marginLeft="@dimen/x87"
+                android:layout_below="@+id/tu"
+                android:layout_width="@dimen/x202"
+                android:layout_height="@dimen/y45"
+                android:text="拿起手机来抢个沙发吧"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <bwie.com.yikezhongtwo.view.DivergeViewSecond
+        android:id="@+id/divergeView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>
